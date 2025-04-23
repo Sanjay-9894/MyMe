@@ -9,7 +9,7 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Sanjy Raj.M | Full-Stack Developer',
+  title: 'Sanjay Raj.M | Full-Stack Developer',
   description: 'Professional portfolio of Sanjy Raj.M, a Full-Stack Developer specializing in React, NextJS, NodeJS, and more.',
 };
 

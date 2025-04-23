@@ -27,73 +27,44 @@ interface Project {
 }
 
 const projectsData: Project[] = [
+ 
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A fully functional e-commerce platform with product catalog, cart, checkout and payment integration.",
-    image: "https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: ["frontend", "fullstack"],
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    title: "Chatbot",
+    description: "Design and implementation of scalable cloud infrastructure for enterprise applications.",
+    image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    category: ["backend", "frontend"],
+    technologies: ["Nextjs", "Expressjs", "Material UI","vercel"],
+    liveUrl: "https://chatbot-hzui796g7-sanjay-rajs-projects-4c65e846.vercel.app/",
+    githubUrl: "https://github.com/Sanjay-9894/chatbot",
   },
   {
     id: 2,
-    title: "Project Management Dashboard",
-    description: "A comprehensive dashboard for project management with task tracking, team collaboration and analytics.",
+    title: "Project Management WebApp",
+    description: "A Webapp for project management with task tracking, team collaboration and analytics.",
     image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: ["frontend", "fullstack"],
-    technologies: ["React", "Firebase", "Material UI"],
+    category: ["frontend","Backend", "fullstack"],
+    technologies: ["Nextjs", "Expressjs", "Material UI","AWS"],
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Sanjay-9894/project-management-application",
   },
   {
     id: 3,
-    title: "Real Estate Listing App",
-    description: "A real estate application with property listings, search, filtering and user authentication.",
-    image: "https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: ["frontend", "fullstack"],
-    technologies: ["Next.js", "Express", "PostgreSQL"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: 4,
-    title: "API Development for Fintech",
-    description: "Secure and scalable API services for a financial technology company.",
-    image: "https://images.pexels.com/photos/936137/pexels-photo-936137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: ["backend"],
-    technologies: ["Node.js", "Express", "MongoDB", "AWS"],
-    githubUrl: "https://github.com",
-  },
-  {
-    id: 5,
-    title: "Social Media Mobile App",
+    title: "Talksy-Chat App",
     description: "A social networking application with real-time messaging and content sharing.",
     image: "https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: ["frontend", "fullstack"],
-    technologies: ["React Native", "Firebase", "Node.js"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    technologies: ["Reactjs", "Expressjs","Socket.io","Firebase", "Node.js"],
+    githubUrl: "https://github.com/Sanjay-9894/Talksy-Chatapp",
   },
-  {
-    id: 6,
-    title: "Cloud Infrastructure Setup",
-    description: "Design and implementation of scalable cloud infrastructure for enterprise applications.",
-    image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: ["backend", "devops"],
-    technologies: ["AWS", "Terraform", "Docker", "Kubernetes"],
-    githubUrl: "https://github.com",
-  }
 ];
 
-const categories = [
-  { value: "all", label: "All Projects" },
-  { value: "frontend", label: "Frontend" },
-  { value: "backend", label: "Backend" },
-  { value: "fullstack", label: "Full-Stack" },
-  { value: "devops", label: "DevOps" },
-];
+// const categories = [
+//   { value: "all", label: "All Projects" },
+//   { value: "frontend", label: "Frontend" },
+//   { value: "backend", label: "Backend" },
+//   { value: "fullstack", label: "Full-Stack" },
+// ];
 
 export default function Projects() {
   const [filter, setFilter] = useState("all");
@@ -144,7 +115,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        {/* <div className="flex flex-wrap justify-center gap-2 mb-12">
           {categories.map((category) => (
             <Button
               key={category.value}
@@ -156,7 +127,7 @@ export default function Projects() {
               {category.label}
             </Button>
           ))}
-        </div>
+        </div> */}
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
@@ -206,24 +177,40 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       </CardContent>
-      <CardFooter className="border-t pt-4 flex gap-2">
-        {project.liveUrl && (
-          <Button asChild variant="default" size="sm" className="flex-1 card-3d">
-            <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="h-4 w-4 mr-1" /> 
+          <CardFooter className="border-t pt-4 flex gap-2">
+      {project.liveUrl && (
+        <a
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1"
+        >
+          <Button variant="default" size="sm" className="w-full card-3d flex items-center justify-center gap-1" asChild={false}>
+            <>
+              <ExternalLink className="h-4 w-4" />
               Live Demo
-            </Link>
+            </>
           </Button>
-        )}
-        {project.githubUrl && (
-          <Button asChild variant="outline" size="sm" className="flex-1 card-3d">
-            <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-              <Github className="h-4 w-4 mr-1" /> 
+        </a>
+      )}
+      {project.githubUrl && (
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1"
+        >
+          <Button variant="outline" size="sm" className="w-full card-3d flex items-center justify-center gap-1" asChild={false}>
+            <>
+              <Github className="h-4 w-4" />
               Code
-            </Link>
+            </>
           </Button>
-        )}
-      </CardFooter>
+        </a>
+      )}
+    </CardFooter>
+
+
     </Card>
   );
 }
