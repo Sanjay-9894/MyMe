@@ -103,9 +103,12 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden aspect-[4/5] bg-muted">
-                {/* Professional photo would go here */}
+                <img
+                  src="/san_image.jpg"
+                  alt="Professional profile"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                  <p className="text-sm">Professional profile image</p>
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-lg -z-10"></div>
