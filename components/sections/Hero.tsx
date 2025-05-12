@@ -78,7 +78,7 @@ export default function Hero() {
             Full-Stack Developer
           </span>
         </h1>
-        <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto hero-text">
+        <p className="text-base text-muted-foreground mb-8 max-w-3xl mx-auto hero-text">
           I help companies and organizations build modern, responsive, and user-friendly
           web applications using cutting-edge technologies.
         </p>
