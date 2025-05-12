@@ -82,7 +82,7 @@ export default function Hero() {
         </p>
   
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button asChild size="lg" className="px-8 card-3d">
+          {/* <Button asChild size="lg" className="px-8 card-3d">
             <Link href="#projects">
               View My Work
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -92,7 +92,7 @@ export default function Hero() {
           <Link href="#contact">
               Contact Me
             </Link>
-          </Button>
+          </Button> */}
         </div>
   
         <div className="mt-16 sm:mt-24 flex justify-center">
@@ -100,7 +100,7 @@ export default function Hero() {
             href="#about"
             className="animate-bounce flex items-center justify-center w-20 h-15 rounded-full border border-border hover:border-primary transition-colors card-3d"
           >
-            <ArrowDown className="h-10 w-10" />
+            <ArrowDown className="h-12 w-12" />
           </Link>
         </div>
       </div>
