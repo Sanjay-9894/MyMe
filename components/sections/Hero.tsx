@@ -69,7 +69,7 @@ export default function Hero() {
         <br></br>
         <br></br>
         <br></br>
-        <p className="text-xl font-semibold mb-4 hero-text">Hi, I'm Sanjay Raj.M</p>
+        {/* <p className="text-xl font-semibold mb-4 hero-text">Hi, I'm Sanjay Raj.M</p> */}
         <h1 className="text-8xl md:text-6xl font-bold tracking-tight mb-6 hero-text">
           <span className=" text-6xl block mb-6"><span className="text-8xl">Building <span className="text-primary text-8xl">Digital</span> Products,</span></span>
           <span className="text-6xl block"><span className="text-7xl">Brands & Experience as a </span></span>
