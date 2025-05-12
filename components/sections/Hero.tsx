@@ -62,10 +62,8 @@ export default function Hero() {
   
       {/* Content */}
       <div className="z-10 max-w-8xl w-[100%] px-4 md:px-8 text-center">
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        {/* <br></br>
+        <br></br> */}
         <br></br>
         <br></br>
         <br></br>
