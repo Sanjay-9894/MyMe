@@ -68,6 +68,7 @@ export default function Hero() {
         <br></br>
         <br></br>
         <br></br>
+        <br></br>
         {/* <p className="text-xl font-semibold mb-4 hero-text">Hi, I'm Sanjay Raj.M</p> */}
         <h1 className="text-8xl md:text-6xl font-bold tracking-tight mb-6 hero-text">
           <span className=" text-6xl block mb-6"><span className="text-8xl">Building <span className="text-primary text-8xl">Digital</span> Products,</span></span>
@@ -99,7 +100,7 @@ export default function Hero() {
         <div className="mt-10 sm:mt-22 flex justify-center">
           <Link
             href="#about"
-            className="animate-bounce flex items-center justify-center w-20 h-16 rounded-full border border-border hover:border-primary transition-colors card-3d"
+            className="animate-bounce flex items-center justify-center w-20 h-15 rounded-full border border-border hover:border-primary transition-colors card-3d"
           >
             <ArrowDown className="h-10 w-10" />
           </Link>
