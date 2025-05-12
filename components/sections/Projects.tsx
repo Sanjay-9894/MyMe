@@ -35,7 +35,6 @@ const projectsData: Project[] = [
     image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: ["backend", "frontend"],
     technologies: ["Nextjs", "Expressjs", "Material UI","vercel"],
-    liveUrl: "https://chatbot-hzui796g7-sanjay-rajs-projects-4c65e846.vercel.app/",
     githubUrl: "https://github.com/Sanjay-9894/chatbot",
   },
   {
@@ -45,7 +44,6 @@ const projectsData: Project[] = [
     image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     category: ["frontend","Backend", "fullstack"],
     technologies: ["Nextjs", "Expressjs", "Material UI","AWS"],
-    liveUrl: "https://example.com",
     githubUrl: "https://github.com/Sanjay-9894/project-management-application",
   },
   {
@@ -146,7 +144,6 @@ export default function Projects() {
     </section>
   );
 }
-
 function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="overflow-hidden group h-full flex flex-col hover:shadow-lg transition-shadow">
@@ -177,40 +174,48 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
       </CardContent>
-          <CardFooter className="border-t pt-4 flex gap-2">
-      {project.liveUrl && (
-        <a
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1"
-        >
-          <Button variant="default" size="sm" className="w-full card-3d flex items-center justify-center gap-1" asChild={false}>
-            <>
-              <ExternalLink className="h-4 w-4" />
-              Live Demo
-            </>
-          </Button>
-        </a>
-      )}
-      {project.githubUrl && (
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1"
-        >
-          <Button variant="outline" size="sm" className="w-full card-3d flex items-center justify-center gap-1" asChild={false}>
-            <>
-              <Github className="h-4 w-4" />
-              Code
-            </>
-          </Button>
-        </a>
-      )}
-    </CardFooter>
-
-
+      <CardFooter className="border-t pt-4 flex gap-2">
+        {project.liveUrl && (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
+            <Button
+              variant="default"
+              size="sm"
+              className="w-full card-3d flex items-center justify-center gap-1"
+              asChild={false}
+            >
+              <>
+                <ExternalLink className="h-4 w-4" />
+                Live Demo
+              </>
+            </Button>
+          </a>
+        )}
+        {project.githubUrl && (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1"
+          >
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full card-3d flex items-center justify-center gap-1 cursor-pointer"
+              asChild={false}
+            >
+              <>
+                <Github className="h-4 w-4" />
+                Code
+              </>
+            </Button>
+          </a>
+        )}
+      </CardFooter>
     </Card>
   );
 }

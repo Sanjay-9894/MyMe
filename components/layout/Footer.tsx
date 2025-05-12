@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <Link 
-                href="https://github.com" 
+                href="https://github.com/Sanjay-9894" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -28,20 +28,12 @@ export default function Footer() {
                 <Github className="h-5 w-5" />
               </Link>
               <Link 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/sanjay-raj-m/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
-              </Link>
-              <Link 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
               </Link>
               <Link 
                 href="mailto:contact@sanjyraj.com" 

@@ -19,7 +19,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { 
   Mail, Phone, MapPin, Send, 
-  Linkedin, Github, Twitter 
+  Linkedin, Github, Twitter, 
+  Link
 } from "lucide-react";
 
 const formSchema = z.object({
@@ -71,7 +72,7 @@ export default function Contact() {
           <div className="card-3d">
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
             <p className="text-muted-foreground mb-8">
-              I'm currently available for intern and fll-time positions. 
+              I'm currently available for intern and full-time positions. 
               Feel free to reach out via email or phone.
             </p>
             
@@ -95,14 +96,22 @@ export default function Contact() {
               />
             </div>
 
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-lg font-medium mb-4">Connect with me</h4>
               <div className="flex gap-4">
+                 <Link 
+                href="https://github.com/Sanjay-9894" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github className="h-5 w-5" />
+              </Link>
                 <SocialLink href="https://www.linkedin.com/in/sanjay-raj-m/" icon={<Linkedin />} label="LinkedIn" />
                 <SocialLink href="https://github.com/Sanjay-9894" icon={<Github />} label="GitHub" />
                 <SocialLink href="https://twitter.com" icon={<Twitter />} label="Twitter" />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="contact-form">

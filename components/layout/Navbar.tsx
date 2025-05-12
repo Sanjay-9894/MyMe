@@ -96,7 +96,7 @@ export default function Navbar() {
           </Button>
           
           <Button asChild variant="outline">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/Sanjay-9894" target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4 mr-2" />
               GitHub
             </Link>
