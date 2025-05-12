@@ -62,8 +62,8 @@ export default function Hero() {
   
       {/* Content */}
       <div className="z-10 max-w-8xl w-[100%] px-4 md:px-8 text-center">
-        {/* <br></br>
-        <br></br> */}
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -97,7 +97,7 @@ export default function Hero() {
           </Button>
         </div>
   
-        <div className="mt-16 sm:mt-24 flex justify-center">
+        <div className="mt-10 sm:mt-22 flex justify-center">
           <Link
             href="#about"
             className="animate-bounce flex items-center justify-center w-20 h-15 rounded-full border border-border hover:border-primary transition-colors card-3d"
